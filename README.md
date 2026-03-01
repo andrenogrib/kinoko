@@ -14,9 +14,9 @@ Este README foi atualizado com o fluxo real usado no Windows para subir servidor
 - Windows + PowerShell
 - Docker Desktop (Engine running)
 - Java 21
-- Maven (ou Maven embutido do IntelliJ)
+- Maven (instalado no sistema ou configurado no VSCode)
 - Git
-- IDE: IntelliJ IDEA 2024.3 (Maven embutido) + editor/terminal no Windows
+- IDE: VSCode (Java e Maven configurados) + terminal PowerShell no Windows
 
 ## Estrutura de pastas recomendada
 

@@ -6,7 +6,7 @@ Este README foi atualizado com o fluxo real usado no Windows para subir servidor
 
 ## Repositorios usados
 
-- Server: este repositorio (`kinoko`)
+- Main repo (upstream): `https://github.com/iw2d/kinoko`
 - Client v95: `https://github.com/iw2d/kinoko_client`
 
 ## Onde encontrar setups do MapleStory

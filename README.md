@@ -9,6 +9,14 @@ Este README foi atualizado com o fluxo real usado no Windows para subir servidor
 - Server: este repositorio (`kinoko`)
 - Client v95: `https://github.com/iw2d/kinoko_client`
 
+## Onde encontrar setups do MapleStory
+
+Para baixar instalacoes de MapleStory (varias versoes), usamos:
+
+`https://archive.org/download/maplestory_all/`
+
+A versao `095` tambem foi encontrada nesse link.
+
 ## Ambiente usado hoje
 
 - Windows + PowerShell
@@ -195,6 +203,7 @@ SELECT account_id, username FROM account_table LIMIT 20;
 SELECT character_id, account_id, character_name, money FROM character_table LIMIT 20;
 
 UPDATE account_table SET nx_credit = 100000 WHERE account_id = 1;
+UPDATE account_table SET nx_prepaid = 100000 WHERE account_id = 1;
 UPDATE character_table SET money = 50000000 WHERE character_id = 1;
 ```
 
@@ -207,11 +216,28 @@ Exemplos:
 - `!help`
 - `!map <fieldId>`
 - `!item <itemId> [qtd]`
+- `!nx <amount>` (define NX Prepaid da conta logada)
 - `!reloaddrops`
 - `!reloadshops`
 - `!npc <npcId>` (abre script do NPC, nao shop direto)
 
 Obs: hoje nao existe checagem forte de permissao de comando no processor. Use em ambiente local/dev.
+
+### Como colocar NX
+
+NX aqui e por conta (account), nao por personagem individual.
+
+In-game:
+
+```text
+!nx 100000
+```
+
+Via Cassandra:
+
+```sql
+UPDATE account_table SET nx_prepaid = 100000 WHERE account_id = 1;
+```
 
 ## GM Shop
 

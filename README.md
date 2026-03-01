@@ -31,7 +31,9 @@ Obs: `wz/`, `logs/` e `client_bin/` estao no `.gitignore`.
 
 ## WZ (obrigatorio)
 
-Voce precisa criar a pasta `wz` na raiz do servidor e copiar os WZ do client v95 para dentro dela.
+Voce precisa instalar MapleStory v95 primeiro.
+
+Depois, crie a pasta `wz` na raiz do servidor e copie para ela os WZ originais da pasta do MapleStory v95 (instalacao oficial do client).
 
 Arquivos esperados:
 
@@ -59,9 +61,11 @@ Repositorio do client:
 
 Fluxo pratico:
 
-1. Deixar o binario do client na pasta do MapleStory v95 (ou numa pasta separada de client de teste).
-2. Seguir o README do client para configuracoes especificas dele.
-3. Subir o server local e conectar no `127.0.0.1`.
+1. Instalar MapleStory v95 no Windows.
+2. Colocar o `kinoko_client` dentro da pasta do MapleStory v95.
+3. Copiar os WZ originais dessa mesma pasta do MapleStory v95 para a pasta `wz/` do servidor.
+4. Seguir o README do client para configuracoes especificas dele.
+5. Subir o server local e conectar no `127.0.0.1`.
 
 ## Start/Stop/Status no Windows
 

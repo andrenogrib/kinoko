@@ -43,3 +43,5 @@ build/
 ### Project ###
 /wz/
 /json/
+/logs/
+/client_bin/
